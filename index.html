@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/script.js"></script>
+    <title>Atividade Avaliativa WEB-I</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>Atividade Avaliativa JavaScript - 1ª Unidade WEB-I</h1>
+        <h3>Aluno João Victor de Lima Araújo</h3>
+        <div>
+            <div class="questions">
+                <h2>01 - Alterar o texto de um elemento HTML</h2>
+                <div id="p-mudar">
+                    <p>Texto que vai mudar</p>
+                </div>
+                <input class="btn" type="button" value="Mudar Nome" onclick="mudaTexto()" />
+            </div>
+            <div class="questions">
+                <h2>02 - Mudar a cor de fundo de um elemento</h2>
+                <p id="mudarCor" onmouseover="mudarCorDiv()" onmouseout="defaultCorDiv()">Aqui vai mudar a cor ao passar o mouse</p>
+            </div>
+            <div class="questions">
+                <div class="q3-q4">
+                    <div>
+                        <h2>03 - Adicionar um novo item a uma lista</h2>
+                        <input class="btn" type="button" value="Adicionar" onclick="addTexto()" />
+                    </div>
+                    <div>
+                        <h2>04 - Remover um item de uma lista</h2>
+                        <input class="btn" type="button" value="Remover" onclick="removeText()" />
+                    </div>
+                </div>
+                <div id="p-paragrafo">
+                </div>
+            </div>
+            <div class="questions">
+                <h2>05 - Alternar a visibilidade de um elemento</h2>
+                <div id="p-hidden">
+                    <p>Texto que vai sumir</p>
+                </div>
+                <input class="btn" type="button" value="Esconder Texto" onclick="hideTexto()" />
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
