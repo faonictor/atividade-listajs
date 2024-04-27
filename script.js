@@ -14,19 +14,33 @@ function defaultCorDiv(){
 }
 
 //-------------> Q3
-function addTexto(){
-    let elemento = document.getElementById("p-paragrafo")
-    elemento.innerHTML+=("<p class='p-paragrafo'>Parágrafo Novo</p>");
+function addParagrafo(main_container) {
+
+    const container = document.getElementById(main_container);
+    const id = 'p-' + (container.children.length + 1); //gerador de id
+
+    const novoElementoHTML = `<p class="p-paragrafo" id="${id}">
+                                Parágrafo ${container.children.length + 1}
+                                <button class="btn" onclick="removerParagrafo('${id}')">Remover</button>
+                              </p>`;
+
+                              
+
+    const novoElemento = document.createElement('div');
+    novoElemento.innerHTML = novoElementoHTML;
+    container.appendChild(novoElemento.firstChild)
 }
 
 //-------------> Q4
-function removeText(){
-    let elemento = document.getElementById("p-paragrafo").lastChild
-    elemento.remove()
+function removerParagrafo(elementoId) {
+    document.getElementById(elementoId).remove();
 }
+
+
 
 //-------------> Q5
 function hideTexto(){
+    //Modificar esta função
     let elemento = document.getElementById("p-hidden");
     if(elemento.style.display=='none'){
         elemento.style.display='';

@@ -43,9 +43,12 @@ p{
 }
 
 .p-paragrafo{
+    flex-wrap: wrap;
     margin: 10px;
     background-color:coral ;
 }
+
+
 
 h3{
     margin-top: 16px;
@@ -68,6 +71,21 @@ h3{
     padding: 10px;
     border-radius: 3px;
     margin-top: 8px;
+    margin-right: 8px;
+}
+
+.btn-remove{
+    background-color: rgb(190, 0, 16);
+    color: aliceblue;
+    border: 1px solid rgb(143, 0, 0);
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+.btn-remove:hover{
+    background-color: rgb(145, 0, 0);
 }
 
 .btn:hover{
