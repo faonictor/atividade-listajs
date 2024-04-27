@@ -47,13 +47,41 @@ function removerParagrafo(paragrafoId) {
 function hideTexto(){
     //Modificar esta função
     let elemento = document.getElementById("p-hidden");
+    let btn = document.getElementById("btn-q5")
+    
     if(elemento.style.display=='none'){
+        btn.value = 'Esconder Texto'
         elemento.style.display='';
     }else{
         elemento.style.display='none'
+        btn.value = 'Mostrar Texto'
     }
 }
 //-------------> Q6
+function validaForm() {
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    // Expressão regular para validar o email
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (nome === '') {
+        alert('Por favor, insira seu nome.');
+        return false;
+    }
+
+    if (email === '') {
+        alert('Por favor, insira seu email.');
+        return false;
+    }
+
+    // Verificar se o email está em um formato válido
+    if (!regexEmail.test(email)) {
+        alert('Por favor, insira um email válido.');
+        return false;
+    }
+    return true;
+}
 
 
 

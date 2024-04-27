@@ -48,7 +48,21 @@
                 <div id="p-hidden">
                     <p>Texto que vai sumir</p>
                 </div>
-                <input class="btn" type="button" value="Esconder Texto" onclick="hideTexto()" />
+                <input id="btn-q5" class="btn" type="button" value="Esconder Texto" onclick="hideTexto()" />
+            </div>
+            <div class="questions">
+                <h2>06 - Validação Formulário</h2>
+                <form class="form-container" action="post" onsubmit="return validarForm()">
+                    <div class="form-box">
+                        <label for="nome">Nome Completo</label>
+                        <input class="form-basico" type="text" id="nome" name="nome" placeholder="Digite nome" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="email">E-mail</label>
+                        <input class="form-basico" type="e-mail" id="email" name="email" placeholder="Digite o e-mail" required>
+                    </div>
+                    <button class="btn" type="submit">Enviar</button>
+                </form>
             </div>
             <div class="questions">
                 <h2>07 - Alterar imagem ao passar o mouse</h2>
@@ -70,9 +84,11 @@
             </div>
             <div class="questions">
                 <h2>10 - Alerta Dinâmico</h2>
-                <div class="p-container">
-                    <label for="text"> Qual sua Série Favorita (Não pode Ser Game of Thrones) </label>
-                    <input class="form-basico" type="text" id="textoEntrada" placeholder="Digite aqui">
+                <div class="form-container">
+                    <div class="form-box">
+                        <label for="text"> Qual sua Série Favorita (Não pode Game of Thrones)? </label>
+                        <input class="form-basico" type="text" id="textoEntrada" placeholder="Digite aqui">
+                    </div>
                     <input class="btn" type="button" value="Confirmar" onclick="alertaDinamica()" />
                 </div>
             </div>
