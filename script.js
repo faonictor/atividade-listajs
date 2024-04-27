@@ -15,9 +15,9 @@ function defaultCorDiv(){
 
 //-------------> Q3
 var contRemove = 1
-function addParagrafo(main_container) {
+function addParagrafo(mainId) {
 
-    const container = document.getElementById(main_container);
+    const container = document.getElementById(mainId);
     const id = 'p-' + (container.children.length + contRemove); //gerador de id
 
     const elementoP = `<p class="p-paragrafo" id="${id}">
@@ -30,12 +30,17 @@ function addParagrafo(main_container) {
     container.appendChild(novoElemento.firstChild)
 }
 
-//-------------> Q4
-function removerParagrafo(elementoId) {
-    document.getElementById(elementoId).remove();
-    contRemove++
+//----------> Remove Todos (Bônus)
+function clearP(mainId) {
+    elemento = document.getElementById(mainId)
+    elemento.innerHTML = ""
 }
 
+//-------------> Q4
+function removerParagrafo(paragrafoId) {
+    document.getElementById(paragrafoId).remove();
+    contRemove++
+}
 
 
 //-------------> Q5
