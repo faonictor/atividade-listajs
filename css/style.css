@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
 }
 
 body{
@@ -51,6 +54,7 @@ p{
 
 h3{
     margin-top: 16px;
+    font-weight: 600;
 }
 
 .q3-q4{
@@ -84,8 +88,69 @@ h3{
 
 .btn-remove:hover{
     background-color: rgb(145, 0, 0);
+    cursor: pointer;
 }
 
 .btn:hover{
     background-color: dodgerblue;
+    cursor: pointer;
 }
+
+.img-box{
+    margin-top: 16px;
+    height: 400px;
+}
+
+.divDinamica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color:coral ;
+    border-radius: 5px;
+    min-width: 350px;
+    height: 50px;
+}
+
+.p-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    background-color:coral ;
+    border-radius: 5px;
+    min-width: 300px;
+    height: 200px;
+}
+
+.p-container label{
+    margin: 8px;
+}
+
+.p-container label{
+    margin: 8px;
+}
+
+.form-basico{
+    margin: 8px;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.form-basico:focus{
+    box-shadow:0px 0px 20px rgb(151, 47, 9);
+}
+
+.form-basico::placeholder {
+    padding-left: 10px;
+}
+
+input[type=text]:focus {
+    border: 3px solid rgb(151, 47, 9);
+}
+
+

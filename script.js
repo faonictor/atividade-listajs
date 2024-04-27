@@ -17,15 +17,15 @@ function defaultCorDiv(){
 var contRemove = 1
 function addParagrafo(mainId) {
 
-    const container = document.getElementById(mainId);
-    const id = 'p-' + (container.children.length + contRemove); //gerador de id
-
-    const elementoP = `<p class="p-paragrafo" id="${id}">
-                                Parágrafo ${container.children.length + contRemove}
-                                <button class="btn-remove" onclick="removerParagrafo('${id}')">Remover</button>
-                              </p>`;
-
-    const novoElemento = document.createElement('p');
+    let container = document.getElementById(mainId);
+    let id = 'p-' + (container.children.length + contRemove); //gerador de id
+    
+    let elementoP = `<p class="p-paragrafo" id="${id}">
+    Parágrafo ${container.children.length + contRemove}
+    <button class="btn-remove" onclick="removerParagrafo('${id}')">Remover</button>
+    </p>`;
+    
+    let novoElemento = document.createElement('p');
     novoElemento.innerHTML = elementoP;
     container.appendChild(novoElemento.firstChild)
 }
@@ -53,5 +53,44 @@ function hideTexto(){
         elemento.style.display='none'
     }
 }
-
 //-------------> Q6
+
+
+
+//-------------> Q7
+function mudarImg(){
+    document.getElementById("mudarImg").setAttribute('src', 'images/img-gato2.jpg')
+}
+
+function defaultImg(){
+    document.getElementById("mudarImg").setAttribute('src', 'images/img-gato1.gif')
+}
+
+//-------------> Q8
+var contaClick = 1
+function clickContador(){
+    texto = document.getElementById('contador')
+    texto.innerHTML= `<p id="contador">Quantidade de Cliques +  ${contaClick}</p>`
+    contaClick ++
+}
+
+//-------------> Q9
+function tamanhoDinamico() {
+    let slide = document.getElementById('barraSlide');
+    let divDinamica = document.getElementById('divDinamica');
+    let valor = slide.value;
+    divDinamica.style.width = `${valor}%`;
+}
+
+//-------------> Q10
+function alertaDinamica(){
+    let campo = document.getElementById('textoEntrada').value;
+    
+    if (campo === '') {
+        alert('Atenção! Insira sua série preferida.');
+    } else if (campo === 'Game of Thrones' || campo ==='got' || campo ==='GOT' || campo ==='GoT' || campo ==='got' || campo ==='game of thrones' || campo ==='gameofthrones'){
+        alert('Não pode ser Game of Thrones'); //kkkkkkkkkk
+    } else {
+        alert(`Aí sim! Uma série de responsa: ${campo}`);
+    }
+}
