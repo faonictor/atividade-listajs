@@ -22,10 +22,10 @@ function addParagrafo(mainId) {
 
     const elementoP = `<p class="p-paragrafo" id="${id}">
                                 Parágrafo ${container.children.length + contRemove}
-                                <button class="btn" onclick="removerParagrafo('${id}')">Remover</button>
+                                <button class="btn-remove" onclick="removerParagrafo('${id}')">Remover</button>
                               </p>`;
 
-    const novoElemento = document.createElement('div');
+    const novoElemento = document.createElement('p');
     novoElemento.innerHTML = elementoP;
     container.appendChild(novoElemento.firstChild)
 }
@@ -34,6 +34,7 @@ function addParagrafo(mainId) {
 function clearP(mainId) {
     elemento = document.getElementById(mainId)
     elemento.innerHTML = ""
+    contRemove = 1
 }
 
 //-------------> Q4
@@ -41,7 +42,6 @@ function removerParagrafo(paragrafoId) {
     document.getElementById(paragrafoId).remove();
     contRemove++
 }
-
 
 //-------------> Q5
 function hideTexto(){
@@ -53,3 +53,5 @@ function hideTexto(){
         elemento.style.display='none'
     }
 }
+
+//-------------> Q6
