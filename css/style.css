@@ -360,7 +360,7 @@ li.item{
     align-items: center;
     justify-content: space-evenly;
     background-color: #252525;
-    width: 100%;
+    width: 70%;
     height: 400px;
     border-radius: 5px;
     margin-top: 8px;
@@ -396,6 +396,21 @@ li.item{
     transition: 0.1s;
 }
 
-#info{
+.btn-white:active{
+    background-color: rgb(94, 94, 94);
+    color: rgb(224, 224, 224);
+    transition: 0.1s;
+}
+
+#infos{
     color: #b3b3b3
+}
+
+.infos{
+    width: 100%;
+    background-color: #252525;
+    padding: 16px;
+    margin-top: 8px;
+    border-radius: 5px;
+    color: #b3b3b3;
 }

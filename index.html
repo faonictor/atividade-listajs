@@ -44,6 +44,7 @@
                 </div>
                 <div id="p-paragrafo">
                 </div>
+                <div class="infos"><i class="fa-solid fa-circle-info"></i>  Adicione itens ou remova | utilize "Limpar" pra zerar o contador</div>
             </div>
             <div class="questions">
                 <h2>Questão 05 - Alternar a visibilidade de um elemento</h2>
@@ -90,7 +91,7 @@
                 <h2>Questão 10 - Alerta Dinâmico</h2>
                 <div class="form-container">
                     <div class="form-box">
-                        <label for="text"> Qual sua Série Favorita (Não pode Game of Thrones)? </label>
+                        <label for="textoEntrada"> Qual sua Série Favorita (Não pode Game of Thrones)? </label>
                         <input class="form-basico" type="text" id="textoEntrada" placeholder="Digite aqui">
                     </div>
                     <input class="btn" type="button" value="Confirmar" onclick="alertaDinamica()" />
@@ -115,6 +116,7 @@
                 <div id="p-area" class="p-area">
                     <div class="personagem" id="personagem"></div>
                     <div class="info">
+                        <i class="fa-solid fa-circle-info"></i>
                         Pressione as teclas do teclado
                         <i class="fa-solid fa-arrow-up"></i>
                         <i class="fa-solid fa-arrow-right"></i>
@@ -128,7 +130,10 @@
                 <div class="p-color">
                     <div class="area-color" id="area-color" onmouseover="mudarCor()" onmouseout="restaurarCor()"><p>Passe o Mouse Aqui</p></div>
                     <input id="btnSwitchColor" class="btn-white" type="button" value="Nova Cor" onclick="selecionarCor()" />
-                    <div id="info">Utilize o botão pra selecionar uma cor aleatória e revele com o mouse.</div>
+                    <div id="infos">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Utilize o botão pra selecionar uma cor aleatória e revele a cor com o mouse.
+                    </div>
                 </div>
             </div>
         </div>
