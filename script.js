@@ -1,16 +1,16 @@
 
 //-------------> Q1
 function mudaTexto(){
-    document.getElementById("p-mudar").innerHTML="<p>Texto que mudou</p>";
+    document.getElementById('p-mudar').innerHTML='<p>Texto que mudou</p>';
 }
 
 //-------------> Q2
 function mudarCorDiv(){
-    document.getElementById("mudarCor").style.backgroundColor='coral';
+    document.getElementById('mudarCor').style.backgroundColor='coral';
 }
 
 function defaultCorDiv(){
-    document.getElementById("mudarCor").style.backgroundColor='';
+    document.getElementById('mudarCor').style.backgroundColor='';
 }
 
 //-------------> Q3
@@ -49,8 +49,8 @@ function removerParagrafo(paragrafoId) {
 //-------------> Q5
 function hideTexto(){
     //Modificar esta função
-    let elemento = document.getElementById("p-hidden");
-    let btn = document.getElementById("btn-q5")
+    let elemento = document.getElementById('p-hidden');
+    let btn = document.getElementById('btn-q5')
     
     if(elemento.style.display=='none'){
         btn.value = 'Esconder Texto'
@@ -89,11 +89,11 @@ function validaForm() {
 
 //-------------> Q7
 function mudarImg(){
-    document.getElementById("mudarImg").setAttribute('src', 'images/img-gato2.jpg')
+    document.getElementById('mudarImg').setAttribute('src', 'images/img-gato2.jpg')
 }
 
 function defaultImg(){
-    document.getElementById("mudarImg").setAttribute('src', 'images/img-gato1.gif')
+    document.getElementById('mudarImg').setAttribute('src', 'images/img-gato1.gif')
 }
 
 //-------------> Q8
@@ -175,28 +175,28 @@ function moveDiv(evento){
 
     if (tecla == '39' && eixoX < maxX){
         eixoX = eixoX + 10
-        personagem.style.left= eixoX + "px"
+        personagem.style.left= eixoX + 'px'
         personagem.removeAttribute('class', 'personagem')
         personagem.setAttribute('class', 'personagemDash')
     }
 
     if (tecla == '37' && eixoX > minX){
         eixoX = eixoX - 10
-        personagem.style.left= eixoX + "px"
+        personagem.style.left= eixoX + 'px'
         personagem.removeAttribute('class', 'personagemDash')
         personagem.setAttribute('class', 'personagem')
     }
 
     if (tecla == '38' && eixoY > minY){
         eixoY = eixoY - 10
-        personagem.style.top= eixoY + "px"
+        personagem.style.top= eixoY + 'px'
         personagem.removeAttribute('class', 'personagemDash')
         personagem.setAttribute('class', 'personagem')
     }
 
     if (tecla == '40' && eixoY < maxY){
         eixoY = eixoY + 10
-        personagem.style.top= eixoY + "px"
+        personagem.style.top= eixoY + 'px'
         personagem.removeAttribute('class', 'personagem')
         personagem.setAttribute('class', 'personagemDash')
     }
