@@ -176,20 +176,30 @@ function moveDiv(evento){
     if (tecla == '39' && eixoX < maxX){
         eixoX = eixoX + 10
         personagem.style.left= eixoX + "px"
+        personagem.removeAttribute('class', 'personagem')
+        personagem.setAttribute('class', 'personagemDash')
     }
 
     if (tecla == '37' && eixoX > minX){
         eixoX = eixoX - 10
         personagem.style.left= eixoX + "px"
+        personagem.removeAttribute('class', 'personagemDash')
+        personagem.setAttribute('class', 'personagem')
     }
 
     if (tecla == '38' && eixoY > minY){
         eixoY = eixoY - 10
         personagem.style.top= eixoY + "px"
+        personagem.removeAttribute('class', 'personagemDash')
+        personagem.setAttribute('class', 'personagem')
     }
 
     if (tecla == '40' && eixoY < maxY){
         eixoY = eixoY + 10
         personagem.style.top= eixoY + "px"
+        personagem.removeAttribute('class', 'personagem')
+        personagem.setAttribute('class', 'personagemDash')
     }
 }
+
+//-------------> Q13

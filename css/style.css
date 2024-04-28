@@ -228,6 +228,7 @@ input[type=e-mail]:focus {
     background-color: #252525;
     width: 800px;
     height: 400px;
+    margin-top: 8px;
 }
 
 .info{
@@ -243,7 +244,15 @@ input[type=e-mail]:focus {
     left: 0; 
     width: 50px; 
     height: 50px; 
-    background-color: coral;
-    transition: 0.2s;
     border-radius: 5px;
+}
+
+.personagem{
+    background-color: coral;
+    transition: 0.3s;
+}
+
+.personagemDash{
+    background-color: dodgerblue;
+    transition: 0.3s;
 }
