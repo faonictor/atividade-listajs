@@ -19,21 +19,21 @@
         <h3>Aluno: João Victor de Lima Araújo</h3>
         <div>
             <div class="questions">
-                <h2>01 - Alterar o texto de um elemento HTML</h2>
+                <h2>Questão 01 - Alterar o texto de um elemento HTML</h2>
                 <div id="p-mudar">
                     <p>Texto que vai mudar</p>
                 </div>
                 <input class="btn" type="button" value="Mudar Texto" onclick="mudaTexto()" />
             </div>
             <div class="questions">
-                <h2>02 - Mudar a cor de fundo de um elemento</h2>
+                <h2>Questão 02 - Mudar a cor de fundo de um elemento</h2>
                 <p id="mudarCor" onmouseover="mudarCorDiv()" onmouseout="defaultCorDiv()">Aqui vai mudar a cor ao passar
                     o mouse</p>
             </div>
             <div class="questions">
                 <div class="q3-q4">
                     <div>
-                        <h2>03 - Adicionar um novo item a uma lista</h2>
+                        <h2>Questões 03 - Adicionar um novo item a uma lista</h2>
                         <input class="btn" type="button" value="Adicionar" onclick="addParagrafo('p-paragrafo')" />
                     </div>
                     <div>
@@ -45,14 +45,14 @@
                 </div>
             </div>
             <div class="questions">
-                <h2>05 - Alternar a visibilidade de um elemento</h2>
+                <h2>Questão 05 - Alternar a visibilidade de um elemento</h2>
                 <div id="p-hidden">
                     <p>Texto que vai sumir</p>
                 </div>
                 <input id="btn-q5" class="btn" type="button" value="Esconder Texto" onclick="hideTexto()" />
             </div>
             <div class="questions">
-                <h2>06 - Validação Formulário</h2>
+                <h2>Questões 06 e 16 - Validação Formulário</h2>
                 <form class="form-container" method="get" onsubmit="return validaForm()">
                     <div class="form-box">
                         <label for="nome">Nome Completo</label>
@@ -67,26 +67,26 @@
                 </form>
             </div>
             <div class="questions">
-                <h2>07 - Alterar imagem ao passar o mouse</h2>
+                <h2>Questão 07 - Alterar imagem ao passar o mouse</h2>
                 <img id="mudarImg" class="img-box" onmouseover="mudarImg()" onmouseout="defaultImg()"
                     src="images/img-gato1.gif" alt="">
             </div>
             <div class="questions">
-                <h2>08 - Contador de Clicks</h2>
+                <h2>Questão 08 - Contador de Clicks</h2>
                 <div class="p-paragrafo" id="contador">
                     <p>Quantidade de Cliques</p>
                 </div>
                 <input class="btn" type="button" value="Clique Aqui" onclick="clickContador()" />
             </div>
             <div class="questions">
-                <h2>09 - Elemento com Tamanho Dinâmico</h2>
+                <h2>Questão 09 - Elemento com Tamanho Dinâmico</h2>
                 <div class="divDinamica" id="divDinamica">
                     <p>Mova o Controle:</p>
                     <input type="range" id="barraSlide" min="30" max="100" value="0" oninput="tamanhoDinamico()">
                 </div>
             </div>
             <div class="questions">
-                <h2>10 - Alerta Dinâmico</h2>
+                <h2>Questão 10 - Alerta Dinâmico</h2>
                 <div class="form-container">
                     <div class="form-box">
                         <label for="text"> Qual sua Série Favorita (Não pode Game of Thrones)? </label>
@@ -96,16 +96,21 @@
                 </div>
             </div>
             <div class="questions">
-                <h2>11 - Mudar Estilos CSS Dinamicamente</h2>
-                <div class="light-mode" id="darkmode">
-                    <div>
-                        <input id="btnSwitch" class="btn-light" type="button" value="Ativar Darkmode"
-                            onclick="cssDinamico()" />
-                    </div>
+                <h2>Questão 11 - Mudar Estilos CSS Dinamicamente</h2>
+                <div class="menu" id="menu">
+                    <input id="btn" class="btn" type="button" value="Aplicar Estilo" onclick="cssDinamico()" />
+                    <ul id="itembar" class="itembar">
+                        <li class="item"><a href="#">Item 1</a></li>
+                        <li class="item"><a href="#">Item 2</a></li>
+                        <li class="item"><a href="#">Item 3</a></li>
+                        <li class="item"><a href="#">Item 4</a></li>
+                        <li class="item"><a href="#">Item 5</a></li>
+                        <li class="item"><a href="#">Item 6</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="questions">
-                <h2>12 - Movimentar Elementos com Teclas Direcionais</h2>
+                <h2>Questão 12 - Movimentar Elementos com Teclas Direcionais</h2>
                 <div id="p-area" class="p-area">
                     <div class="personagem" id="personagem"></div>
                     <div class="info">
@@ -115,6 +120,22 @@
                         <i class="fa-solid fa-arrow-down"></i>
                         <i class="fa-solid fa-arrow-left"></i>
                     </div>
+                </div>
+            </div>
+            <div class="questions">
+                <h2>Questão 13 - Hover Dinamicamente</h2>
+                <div class="">
+                    <div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="questions">
+            <h2>Questão 14 - Tema Darkmode/Lightmode</h2>
+            <div class="light-mode" id="darkmode">
+                <div>
+                    <input id="btnSwitch" class="btn-light" type="button" value="Ativar Darkmode" onclick="darkmode()" />
                 </div>
             </div>
         </div>

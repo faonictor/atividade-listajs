@@ -127,24 +127,36 @@ function alertaDinamica(){
 
 //-------------> Q11
 function cssDinamico(){
-    let bg = document.getElementById('darkmode')
-    let btnSwitch = document.getElementById('btnSwitch')
+    let menu = document.getElementById('menu')
+    let btnMute = document.getElementById('btn')
+    let bar = document.getElementById('itembar')
+    let item = document.querySelectorAll('li')
 
-    if (btnSwitch.classList.contains('btn-light')) { //fiz a comparação só com a div principal
-        btnSwitch.value = 'Ativar Lightmode'
-        bg.removeAttribute('class', 'light-mode')
-        bg.setAttribute('class', 'dark-mode')
+    if (btnMute.classList.contains('btn')) {
+        btnMute.value = 'Remover Estilo'
+        btnMute.removeAttribute('class', 'btn')
+        btnMute.setAttribute('class', 'btn-mute')
+        menu.removeAttribute('class', 'menu')
+        menu.setAttribute('class', 'menu-mute')
+        bar.removeAttribute('class', 'itembar')
+        bar.setAttribute('class', 'itembar-mute')
+        item.forEach(function(item) {
+            item.removeAttribute('class', 'item')
+            item.setAttribute('class', 'item-mute')
+        })
 
-        btnSwitch.removeAttribute('class', 'btn-light')
-        btnSwitch.setAttribute('class', 'btn-dark')
-
-    } else {
-        btnSwitch.value = 'Ativar Darkmode'
-        bg.removeAttribute('class', 'dark-mode')
-        bg.setAttribute('class', 'light-mode' )
-
-        btnSwitch.removeAttribute('class', 'btn-dark')
-        btnSwitch.setAttribute('class', 'btn-light')        
+    }else {
+        btnMute.value = 'Aplicar Estilo'
+        btnMute.removeAttribute('class', 'btn-mute')
+        btnMute.setAttribute('class', 'btn')
+        menu.removeAttribute('class', 'menu-mute')
+        menu.setAttribute('class', 'menu')
+        bar.removeAttribute('class', 'itembar-mute')
+        bar.setAttribute('class', 'itembar')
+        item.forEach(function(item) {
+            item.removeAttribute('class', 'item-mute')
+            item.setAttribute('class', 'item')
+        })
     }
 }
 
@@ -203,3 +215,27 @@ function moveDiv(evento){
 }
 
 //-------------> Q13
+
+
+//-------------> Q14
+function darkmode(){
+    let bg = document.getElementById('darkmode')
+    let btnSwitch = document.getElementById('btnSwitch')
+
+    if (btnSwitch.classList.contains('btn-light')) { //fiz a comparação só com a div principal
+        btnSwitch.value = 'Ativar Lightmode'
+        bg.removeAttribute('class', 'light-mode')
+        bg.setAttribute('class', 'dark-mode')
+
+        btnSwitch.removeAttribute('class', 'btn-light')
+        btnSwitch.setAttribute('class', 'btn-dark')
+
+    } else {
+        btnSwitch.value = 'Ativar Darkmode'
+        bg.removeAttribute('class', 'dark-mode')
+        bg.setAttribute('class', 'light-mode' )
+
+        btnSwitch.removeAttribute('class', 'btn-dark')
+        btnSwitch.setAttribute('class', 'btn-light')        
+    }
+}

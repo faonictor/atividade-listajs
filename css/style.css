@@ -138,7 +138,6 @@ h3{
     background-color: rgb(1, 12, 24);
     cursor: pointer;
     border: 5px;
-    
 }
 
 .btn-dark{
@@ -226,7 +225,7 @@ input[type=e-mail]:focus {
     position: relative;
     border-radius: 5px;
     background-color: #252525;
-    width: 800px;
+    width: 70%;
     height: 400px;
     margin-top: 8px;
 }
@@ -244,7 +243,8 @@ input[type=e-mail]:focus {
     left: 0; 
     width: 50px; 
     height: 50px; 
-    border-radius: 5px;
+    border-radius: 4px;
+    z-index: 999;
 }
 
 .personagem{
@@ -256,3 +256,106 @@ input[type=e-mail]:focus {
     background-color: dodgerblue;
     transition: 0.3s;
 }
+
+/*default*/
+.menu{
+    background-color: #cccccc;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 8px;
+    gap: 50px;
+}
+
+.itembar{
+    display: flex;
+    column-gap: 50px;
+}
+/*  mute */
+
+.menu-mute{
+    background-color: coral;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.itembar-mute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    height: 60px;
+}
+
+.item-mute{
+    background-color: coral;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.item-mute a{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.item-mute li a{
+    height: 80px;
+}
+
+.item-mute a:hover{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.item-mute li:hover{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.item-mute:hover{
+    height: 80px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.btn-mute{
+    background-color: rgb(230, 230, 230);
+    font-weight: 500;
+    color: coral;
+    border: 1px solid coral;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn-mute:hover{
+    background-color: dodgerblue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.btn-mute:active{
+    background-color: blue;
+    border: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+
+
