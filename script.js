@@ -30,7 +30,10 @@ function addParagrafo(mainId) {
     container.appendChild(novoElemento.firstChild)
 }
 
-//----------> Remove Todos (Bônus)
+/*
+Remove Todos (Bônus)
+essa função alem de limpar o conteúdo, coloquei pra resetar o contador
+*/
 function clearP(mainId) {
     elemento = document.getElementById(mainId)
     elemento.innerHTML = ""
@@ -57,6 +60,7 @@ function hideTexto(){
         btn.value = 'Mostrar Texto'
     }
 }
+
 //-------------> Q6
 function validaForm() {
     const nome = document.getElementById('nome').value.trim();
@@ -82,8 +86,6 @@ function validaForm() {
     }
     return true;
 }
-
-
 
 //-------------> Q7
 function mudarImg(){
@@ -120,5 +122,28 @@ function alertaDinamica(){
         alert('Não pode ser Game of Thrones'); //kkkkkkkkkk
     } else {
         alert(`Aí sim! Uma série de responsa: ${campo}`);
+    }
+}
+
+//-------------> Q11
+function cssDinamico(){
+    let bg = document.getElementById('darkmode')
+    let btnSwitch = document.getElementById('btnSwitch')
+
+    if (btnSwitch.classList.contains('btn-light')) { //fiz a comparação só com a div principal
+        btnSwitch.value = 'Ativar Lightmode'
+        bg.removeAttribute('class', 'light-mode')
+        bg.setAttribute('class', 'dark-mode')
+
+        btnSwitch.removeAttribute('class', 'btn-light')
+        btnSwitch.setAttribute('class', 'btn-dark')
+
+    } else {
+        btnSwitch.value = 'Ativar Darkmode'
+        bg.removeAttribute('class', 'dark-mode')
+        bg.setAttribute('class', 'light-mode' )
+
+        btnSwitch.removeAttribute('class', 'btn-dark')
+        btnSwitch.setAttribute('class', 'btn-light')        
     }
 }
