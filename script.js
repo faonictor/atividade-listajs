@@ -1,4 +1,3 @@
-
 //-------------> Q1
 function mudaTexto(){
     document.getElementById('p-mudar').innerHTML='<p>Texto que mudou</p>';
@@ -175,9 +174,12 @@ function moveDiv(evento){
     let maxX = telaLimite.width - personagem.offsetWidth;
     let maxY = telaLimite.height - personagem.offsetHeight;
 
-    evento.preventDefault(scrollBy);
+    
     let tecla = evento.keyCode; 
-
+    if(tecla == '37' || tecla == '38' || tecla == '39' || tecla == '40'){
+        evento.preventDefault(scroll);
+    }
+    
     /*
     esquerda --> 37
     cima --> 38
@@ -216,13 +218,30 @@ function moveDiv(evento){
 
 //-------------> Q13
 
+var cores = ['dodgerblue', 'coral', 'aliceblue', 'Violet', 'crimson', 'Brown', 'aqua', 'aquamarine', 'chartreuse', 'indianred'];
+var corSelecionada = '';
+
+function selecionarCor() {
+    corSelecionada = cores[Math.floor(Math.random() * cores.length)];
+}
+
+function mudarCor() {
+    let novaCor = document.getElementById('area-color')
+    novaCor.style.backgroundColor = corSelecionada;
+    return novaCor
+}
+
+function restaurarCor() {
+    let corbase = document.getElementById('area-color')
+    corbase.style.backgroundColor = '#b3b3b3';
+}
 
 //-------------> Q14
 function darkmode(){
     let bg = document.getElementById('darkmode')
     let btnSwitch = document.getElementById('btnSwitch')
 
-    if (btnSwitch.classList.contains('btn-light')) { //fiz a comparação só com a div principal
+    if (btnSwitch.classList.contains('btn-light')) {
         btnSwitch.value = 'Ativar Lightmode'
         bg.removeAttribute('class', 'light-mode')
         bg.setAttribute('class', 'dark-mode')
