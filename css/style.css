@@ -131,7 +131,6 @@ h3{
     border: 1px solid rgb(0, 24, 44);
     padding: 10px;
     border-radius: 3px;
-    margin-top: 8px;
     transition: 0.5s;
 }
 
@@ -148,7 +147,6 @@ h3{
     border: 1px solid deepskyblue;
     padding: 10px;
     border-radius: 3px;
-    margin-top: 8px;
     transition: 0.5s;
 }
 
@@ -224,4 +222,28 @@ input[type=e-mail]:focus {
     border: 3px solid #b3b3b349;
 }
 
+.p-area{
+    position: relative;
+    border-radius: 5px;
+    background-color: #252525;
+    width: 800px;
+    height: 400px;
+}
 
+.info{
+    position: relative;
+    top: 300px; 
+    left: 0; 
+    color: #b3b3b3;
+}
+
+#personagem{
+    position: relative;
+    top: 0; 
+    left: 0; 
+    width: 50px; 
+    height: 50px; 
+    background-color: coral;
+    transition: 0.2s;
+    border-radius: 5px;
+}

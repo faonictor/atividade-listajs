@@ -147,3 +147,49 @@ function cssDinamico(){
         btnSwitch.setAttribute('class', 'btn-light')        
     }
 }
+
+//-------------> Q12
+var eixoX = 0;
+var eixoY = 0;
+var personagem = document.getElementById('personagem');
+var tela = document.getElementById('p-area')
+document.addEventListener('keydown', moveDiv)
+
+function moveDiv(evento){
+
+    let telaLimite = tela.getBoundingClientRect();
+    let minX = 0;
+    let minY = 0;
+    let maxX = telaLimite.width - personagem.offsetWidth;
+    let maxY = telaLimite.height - personagem.offsetHeight;
+
+    evento.preventDefault(scrollBy);
+    let tecla = evento.keyCode; 
+
+    /*
+    esquerda --> 37
+    cima --> 38
+    direita --> 39
+    baixo --> 40
+    */
+
+    if (tecla == '39' && eixoX < maxX){
+        eixoX = eixoX + 10
+        personagem.style.left= eixoX + "px"
+    }
+
+    if (tecla == '37' && eixoX > minX){
+        eixoX = eixoX - 10
+        personagem.style.left= eixoX + "px"
+    }
+
+    if (tecla == '38' && eixoY > minY){
+        eixoY = eixoY - 10
+        personagem.style.top= eixoY + "px"
+    }
+
+    if (tecla == '40' && eixoY < maxY){
+        eixoY = eixoY + 10
+        personagem.style.top= eixoY + "px"
+    }
+}
