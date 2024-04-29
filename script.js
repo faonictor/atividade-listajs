@@ -217,7 +217,6 @@ function moveDiv(evento){
 }
 
 //-------------> Q13
-
 var cores = ['dodgerblue', 'coral', 'aliceblue', 'Violet', 'crimson', 'Brown', 'aqua', 'aquamarine', 'chartreuse', 'indianred'];
 var corSelecionada = '';
 
@@ -261,6 +260,7 @@ function darkmode(){
         icon.innerHTML = '<i class="fa-solid fa-sun"></i>'      
     }
 }
+
 //-------------> Q15
 var images = [
     "./images/imagem1.gif",
@@ -290,6 +290,28 @@ function proxima() {
     imagemShow.src = images[contadorimg];
 }
 
+//-------------> Q16
+
+function validarEmail(event) {
+    const emailInput = document.getElementById('email16');
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+        emailInput.classList.remove('form-basico');
+        emailInput.classList.add('form-basico-erro');
+        event.preventDefault();
+        alert('Por favor, insira um endereço de e-mail válido.');
+    } else {
+        emailInput.classList.remove('form-basico-erro');
+        emailInput.classList.remove('form-basico');
+    }
+}
+
+const emailForm = document.getElementById('form-mail');
+emailForm.addEventListener('submit', validarEmail);
+document.getElementById('email16').addEventListener('blur', validarEmail);
+
 //-------------> Q17
 function mostrar(){
     let modal = document.getElementById('meuModal')
@@ -318,21 +340,6 @@ conteudo.forEach((item, index) => {
     console.log(texto)
 })
 
-var iniciar = false;
-document.addEventListener("DOMContentLoaded", function() {download();});
+//-------------> Q19 - Está no script-q19.js
 
-function download() {
-    if (!iniciar) {
-        iniciar = true;
-        let progresso = 0;
-        const barra = document.getElementById('progresso');
-
-        const intervalId = setInterval(() => {
-            progresso += 1;
-            barra.style.width = progresso + '%';
-            if (progresso >= 100) {
-                clearInterval(intervalId);
-            }
-        }, 50); // Ajuste o intervalo conforme necessário
-    }
-}
+//-------------> Q20

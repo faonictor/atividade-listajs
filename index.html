@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="/script.js"></script>
+    <script src="/script-q19.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fc0d610add.js" crossorigin="anonymous"></script>
     <title>Atividade Avaliativa WEB-I</title>
@@ -30,7 +30,7 @@
                 <div class="nav-itens">
                     <a class="nav-a" href="#q1">01</a>
                     <a class="nav-a" href="#q2">02</a>
-                    <a class="nav-a" href="#q3">03|04</a>
+                    <a class="nav-a" href="#q3">03 | 04</a>
                     <a class="nav-a" href="#q5">05</a>
                     <a class="nav-a" href="#q6">06</a>
                     <a class="nav-a" href="#q7">07</a>
@@ -83,7 +83,7 @@
                 <input id="btn-q5" class="btn" type="button" value="Esconder Texto" onclick="hideTexto()" />
             </div>
             <div id="q6" class="questions">
-                <h2>Questões 06 e 16 - Validação Formulário</h2>
+                <h2>Questões 06 - Validação Formulário</h2>
                 <form class="form-container" method="get" onsubmit="return validaForm()">
                     <div class="form-box">
                         <label for="nome">Nome Completo</label>
@@ -201,7 +201,13 @@
             </div>
             <div id="q16" class="questions">
                 <h2>Questão 16</h2>
-                asdasd
+                <form class="form-container" id="form-mail" method="get" onsubmit="">
+                    <div class="form-box">
+                        <label for="email16">Email:</label>
+                        <input class="form-basico" type="email" id="email16" name="email" placeholder="Digite um E-mail Válido" required>
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+                </form>
             </div>
             <div id="q17" class="questions">
                 <h2>Questão 17 - Pop-up Estilo Modal</h2>
@@ -253,13 +259,13 @@
                     </div>
                 </div>
             </div>
-            
+            <div id="q20" class="questions">
+                <h2>Questão 19 - Animação On Load</h2>
 
-
+                </div>
+            </div>
         </div>
-
     </main>
-
     <script src="/script.js"></script>
 </body>
 

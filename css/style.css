@@ -654,3 +654,17 @@ header i:hover{
 .link-refresh:active{
     color: aliceblue;
 }
+
+
+input.form-basico-erro{
+    width: 100%;
+    margin: 8px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid red;
+    margin-bottom: 16px;
+}
+
+input.form-basico-erro::placeholder{
+    padding-left: 10px;
+}
