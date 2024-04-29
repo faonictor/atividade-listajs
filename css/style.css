@@ -471,3 +471,42 @@ li.item{
     padding: 16px;
     margin-top: 8px;
 }
+
+.nav-q{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    border-radius: 10px;
+    width: 100%;
+    height: 70px;
+}
+
+.nav-itens{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.nav-a{
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    height: 70px;
+    color: blue;
+    text-decoration: none;
+    transition: 0.1s;
+    border-radius: 10px;
+}
+.nav-a:hover{
+    color: #b3b3b3;
+    background-color: #252525;
+}
+
+/* #q1, #q2, #q3, #q4 {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+} */

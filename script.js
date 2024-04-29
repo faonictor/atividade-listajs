@@ -288,3 +288,11 @@ function proxima() {
 }
 
 //-------------> Q16
+
+
+
+//----
+/* function carregarElemento(minhasecao) {
+    var secao = document.getElementById(minhasecao);
+    secao.style.transition = 1+'s'; // Define a opacidade como 1 para mostrar a seção
+} */
