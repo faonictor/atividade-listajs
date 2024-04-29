@@ -288,6 +288,14 @@ function proxima() {
 }
 
 //-------------> Q16
+function mostrar(){
+    let modal = document.getElementById('meuModal')
+    modal.showModal()
+}
+function sair(){
+    let modal = document.getElementById('meuModal')
+    modal.close()
+}
 
 
 

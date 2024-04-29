@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/fc0d610add.js" crossorigin="anonymous"></script>
     <title>Atividade Avaliativa WEB-I</title>
 </head>
@@ -25,7 +26,7 @@
         <div>
             <nav class="nav-q">
                 <div>
-                    <p><i class="fa-solid fa-list"></i>  Questões:</p>
+                    <p><i class="fa-solid fa-list"></i> Questões:</p>
                 </div>
                 <div class="nav-itens">
                     <a class="nav-a" href="#q1" onclick="carregarElemento('q1')">01</a>
@@ -74,7 +75,8 @@
                 </div>
                 <div id="p-paragrafo">
                 </div>
-                <div class="infos"><i class="fa-solid fa-circle-info"></i>  Adicione itens ou remova | utilize "Limpar" pra zerar o contador</div>
+                <div class="infos"><i class="fa-solid fa-circle-info"></i> Adicione itens ou remova | utilize "Limpar"
+                    pra zerar o contador</div>
             </div>
             <div id="q5" class="questions">
                 <h2>Questão 05 - Alternar a visibilidade de um elemento</h2>
@@ -158,9 +160,12 @@
             <div id="q13" class="questions">
                 <h2>Questão 13 - Hover Dinamicamente</h2>
                 <div class="p-color">
-                    <div class="area-color" id="area-color" onmouseover="mudarCor()" onmouseout="restaurarCor()"><p>Passe o Mouse Aqui</p></div>
-                    <input id="btnSwitchColor" class="btn-white" type="button" value="Nova Cor" onclick="selecionarCor()" />
-                    <div id="infos">
+                    <div class="area-color" id="area-color" onmouseover="mudarCor()" onmouseout="restaurarCor()">
+                        <p>Passe o Mouse Aqui</p>
+                    </div>
+                    <input id="btnSwitchColor" class="btn-white" type="button" value="Nova Cor"
+                        onclick="selecionarCor()" />
+                    <div class="box-infos">
                         <i class="fa-solid fa-circle-info"></i>
                         Utilize o botão pra selecionar uma cor aleatória e revele a cor com o mouse.
                     </div>
@@ -171,50 +176,60 @@
             <h2>Questão 14 - Tema Darkmode/Lightmode</h2>
             <div class="light-mode" id="darkmode">
                 <div>
-                    <input id="btnSwitch" class="btn-light" type="button" value="Ativar Darkmode" onclick="darkmode()" />
+                    <input id="btnSwitch" class="btn-light" type="button" value="Ativar Darkmode"
+                        onclick="darkmode()" />
                 </div>
             </div>
         </div>
         <div id="q15" class="questions">
-            
             <h2>Questão 15 - Carrossel de Imagens</h2>
             <div class="main">
                 <div class="p-slider">
-                    <div class="btn-way" onclick="anterior()" >
+                    <div class="btn-way" onclick="anterior()">
                         <i class="fa-solid fa-circle-left fa-2xl" style="color: #b3b3b3;"></i>
                     </div>
-    
+
                     <div id="imageShow">
                         <img class="imgCarrossel" id="imagemPrincipal" src="./images/imagem2.gif" alt="Imagem">
                     </div>
-    
-                    <div class="btn-way" onclick="proxima()" >
+
+                    <div class="btn-way" onclick="proxima()">
                         <i class="fa-solid fa-circle-right fa-2xl" style="color: #b3b3b3;""></i>
                     </div>
                 </div>
-                <div id="infos">
-                    <i class="fa-solid fa-circle-info"></i>
-                    Utilize os direcionais pra modificar as imagens.
+                <div class="box-infos"">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Utilize os direcionais pra modificar as imagens.
+                    </div>
                 </div>
             </div>
             <div id="q16" class="questions">
                 <h2>Questão 16</h2>
-                <div class="light-mode" id="darkmode">
-                    <div>
-                        <input id="btnSwitch" class="btn-light" type="button" value="Ativar Darkmode" onclick="darkmode()" />
-                    </div>
-                </div>
+                asdasd
             </div>
             <div id="q17" class="questions">
                 <h2>Questão 17 - Pop-up Estilo Modal</h2>
-                <div class="light-mode" id="darkmode">
+                <div class="meuModal">
+                    <dialog class="modal-show" id="meuModal">
+                        <h2>Esta é a questão 17</h2>
+                        <input class="btn" type="button" value="Fechar" onclick="sair()" />
+                        <div class="box-infos">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Agora pode fechar o modal clicando 'Fechar' ou apertando 'ESC'.
+                        </div>
+                    </dialog>
                     <div>
-                        <input id="btnSwitch" class="btn-light" type="button" value="Ativar Darkmode" onclick="darkmode()" />
+                        <input class="btn" type="button" value="Abrir Mensagem" onclick="mostrar()" />
+                        <div class="box-infos">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Mensagem Importante clique no Botão abaixo pra receber
+                        </div>
                     </div>
+
                 </div>
             </div>
-  
-        
+
+
         </div>
 
     </main>
