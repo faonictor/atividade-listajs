@@ -71,7 +71,7 @@
             <div class="questions">
                 <h2>Questão 07 - Alterar imagem ao passar o mouse</h2>
                 <img id="mudarImg" class="img-box" onmouseover="mudarImg()" onmouseout="defaultImg()"
-                    src="images/img-gato1.gif" alt="">
+                    src="images/img-gato1.gif" alt="gif">
             </div>
             <div class="questions">
                 <h2>Questão 08 - Contador de Clicks</h2>
@@ -144,6 +144,31 @@
                     <input id="btnSwitch" class="btn-light" type="button" value="Ativar Darkmode" onclick="darkmode()" />
                 </div>
             </div>
+        </div>
+        <div id="q15" class="questions">
+            
+            <h2>Questão 15 - Carrossel Imagens</h2>
+            <div class="main">
+                <div class="p-slider">
+                    <div class="btn-way" onclick="anterior()" >
+                        <i class="fa-solid fa-circle-left fa-2xl" style="color: #b3b3b3;"></i>
+                    </div>
+    
+                    <div id="imageShow">
+                        <img class="imgCarrossel" id="imagemPrincipal" src="./images/imagem2.gif" alt="Imagem">
+                    </div>
+    
+                    <div class="btn-way" onclick="proxima()" >
+                        <i class="fa-solid fa-circle-right fa-2xl" style="color: #b3b3b3;""></i>
+                    </div>
+                </div>
+                <div id="infos">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Utilize os direcionais pra modificar as imagens.
+                </div>
+            </div>
+  
+            
         </div>
 
     </main>

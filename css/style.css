@@ -414,3 +414,60 @@ li.item{
     border-radius: 5px;
     color: #b3b3b3;
 }
+
+.p-slider{
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+    padding: 32px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.btn-way{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 120px;
+}
+
+.btn-way:hover{
+    background-color: #b3b3b323;
+    border-radius: 10px ;
+    transition: 0.5;
+}
+
+.btn-way:active{
+    background-color: #ff61618c;
+    border-radius: 10px ;
+}
+
+.imageShow{
+    height: 400px;
+    width: 600px;
+    display: flex;
+    overflow: hidden;
+}
+
+.imgCarrossel{
+    object-fit: cover;
+    width: 600px;
+    height: 350px;
+
+}
+
+.main{
+    width: 100%;
+    background-color: #252525;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    margin-top: 8px;
+}

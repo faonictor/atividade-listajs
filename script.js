@@ -258,3 +258,33 @@ function darkmode(){
         btnSwitch.setAttribute('class', 'btn-light')        
     }
 }
+//-------------> Q15
+var images = [
+    "./images/imagem1.gif",
+    "./images/imagem2.gif",
+    "./images/imagem3.gif",
+    "./images/imagem4.gif",
+    "./images/imagem5.gif"
+  ];
+
+var imagemShow = document.getElementById('imagemPrincipal')
+var contadorimg = 0;
+function anterior() {
+    if (contadorimg === 0) {
+        contadorimg = images.length - 1;
+    } else {
+        contadorimg = contadorimg - 1;
+    }
+    imagemShow.src = images[contadorimg];
+}
+
+function proxima() {
+    if (contadorimg === 0) {
+        contadorimg = images.length - 1;
+    } else {
+        contadorimg = contadorimg - 1;
+    }
+    imagemShow.src = images[contadorimg];
+}
+
+//-------------> Q16
