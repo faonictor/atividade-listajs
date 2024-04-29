@@ -559,6 +559,61 @@ dialog::backdrop{
     background-color: #252525da;
 }
 
+.accordion{
+    max-width: 700px;
+    width: 100%;
+    background-color: #252525;
+    margin: 8px 16px 0 16px;
+    padding: 16px;
+    border-radius: 5px;
+    border: 1px solid #1b1b1b;
+}
+
+.accordion .conteudo{
+    border-radius: 5px;
+    background-color:#252525;
+    overflow: hidden;
+}
+
+.conteudo header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    min-height: 50px;
+    background-color:#252525;
+    color: aliceblue;
+    border: 1px solid #252525;
+    border-radius: 10px;
+}
+
+.conteudo header:hover{
+    border: 1px solid dodgerblue;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+header i:hover{
+    color: dodgerblue;
+}
+
+.conteudo .texto{
+    height: 0;
+    padding: 0 16px;
+    transition: all 0.2s linear;
+}
+
+.conteudo.open{
+    padding-bottom: 8px;
+}
+
+.texto{
+    margin-top: 8px;
+    color: dodgerblue;
+}
+
+
+
 /* #q1, #q2, #q3, #q4 {
     opacity: 0.5;
     transition: opacity 0.5s ease;

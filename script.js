@@ -290,7 +290,7 @@ function proxima() {
     imagemShow.src = images[contadorimg];
 }
 
-//-------------> Q16
+//-------------> Q17
 function mostrar(){
     let modal = document.getElementById('meuModal')
     modal.showModal()
@@ -300,6 +300,23 @@ function sair(){
     modal.close()
 }
 
+//-------------> Q18
+var conteudo = document.querySelectorAll('.conteudo')
+conteudo.forEach((item, index) => {
+    let menu = item.querySelector('header');
+    menu.addEventListener('click', () =>{
+        item.classList.toggle('open');
+        let texto = item.querySelector('.texto')
+        if(item.classList.contains('open')){
+            texto.style.height = `${texto.scrollHeight}px`
+            item.querySelector('i').classList.replace('fa-plus','fa-minus')
+        }else{
+            texto.style.height = '0px'
+            item.querySelector('i').classList.replace('fa-minus','fa-plus')
+        }
+    })
+    console.log(texto)
+})
 
 
 //----
