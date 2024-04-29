@@ -263,11 +263,12 @@
                 </div>
             </div>
             <div id="q20" class="questions">
-                <h2>Questão 20 - Campo de Busca com Filtro Dinâmico</h2>
-                <div>
-                    <label for="search">Pesquisar:</label>
-                    <input type="search" id="search" name="search">
-                    <ul id="itemList"></ul>
+                <h2>Questão 20 - Campo de Busca com Filtro Dinâmico</h2>               
+                <div class="form-container" onmouseenter="carregarPalavras()" onmouseleave="limparPalavras()">
+                    <div class="titulo-busca"><i class="fa-solid fa-circle-info"></i>  Pesquise Abaixo (Diferença de Maiúsculas e Minúsculas)</div>
+                    <label for="search1"></label>
+                    <input class="form-basico" type="search" onkeyup="busca()" id="search1" placeholder="Pesquisar"/>
+                    <div class="titulo-busca" id="divParaPalavras"></div>
                 </div>
             </div>
         </div>

@@ -239,6 +239,11 @@ input[type=e-mail]:focus {
     border: 3px solid #b3b3b349;
 }
 
+input[type=search]:focus {
+    box-shadow:0px 0px 10px dodgerblue;
+    border: 3px solid #b3b3b349;
+}
+
 .p-area{
     position: relative;
     border-radius: 5px;
@@ -698,4 +703,8 @@ input.form-basico-erro::placeholder{
 
 .home a:hover{
     color: aliceblue;
+}
+
+.titulo-busca{
+    color: #b3b3b3;
 }

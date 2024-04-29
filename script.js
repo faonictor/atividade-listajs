@@ -336,7 +336,6 @@ conteudo.forEach((item, index) => {
             item.querySelector('i').classList.replace('fa-minus','fa-plus')
         }
     })
-    console.log(texto)
 })
 
 //-------------------------------------------------> Q19 - Está no script-q19.js
