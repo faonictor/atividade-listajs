@@ -19,7 +19,7 @@ main{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    max-width: 70%;
+    max-width: 90%;
     padding: 64px;
     background-color: #b3b3b3;
     text-align: center;
@@ -643,18 +643,17 @@ header i:hover{
 }
 
 .link-refresh{
-    color: #b3b3b3;
+    color:dodgerblue;
     text-decoration: none;
 }
 
 .link-refresh:hover{
-    color: dodgerblue;
+    color:cornflowerblue;
 }
 
 .link-refresh:active{
     color: aliceblue;
 }
-
 
 input.form-basico-erro{
     width: 100%;
@@ -667,4 +666,36 @@ input.form-basico-erro{
 
 input.form-basico-erro::placeholder{
     padding-left: 10px;
+}
+
+.home{
+    display: flex; /* Inicia oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:#252525;
+    color: aliceblue;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.home a{
+    width: 50px;
+    height: 50px;
+    color:#b3b3b3;
+}
+
+.home:hover{
+    background-color:dodgerblue;
+}
+
+.home a:hover{
+    color: aliceblue;
 }

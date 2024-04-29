@@ -1,9 +1,9 @@
-//-------------> Q1
+//--------------------------------------------------------------------------> Q1
 function mudaTexto(){
     document.getElementById('p-mudar').innerHTML='<p>Texto que mudou</p>';
 }
 
-//-------------> Q2
+//--------------------------------------------------------------------------> Q2
 function mudarCorDiv(){
     document.getElementById('mudarCor').style.backgroundColor='dodgerblue';
 }
@@ -12,7 +12,7 @@ function defaultCorDiv(){
     document.getElementById('mudarCor').style.backgroundColor='';
 }
 
-//-------------> Q3
+//--------------------------------------------------------------------------> Q3
 var contRemove = 1
 function addParagrafo(mainId) {
 
@@ -39,13 +39,13 @@ function clearP(mainId) {
     contRemove = 1
 }
 
-//-------------> Q4
+//--------------------------------------------------------------------------> Q4
 function removerParagrafo(paragrafoId) {
     document.getElementById(paragrafoId).remove();
     contRemove++
 }
 
-//-------------> Q5
+//--------------------------------------------------------------------------> Q5
 function hideTexto(){
     //Modificar esta função
     let elemento = document.getElementById('p-hidden');
@@ -60,7 +60,7 @@ function hideTexto(){
     }
 }
 
-//-------------> Q6
+//--------------------------------------------------------------------------> Q6
 function validaForm() {
     const nome = document.getElementById('nome').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -86,7 +86,7 @@ function validaForm() {
     return true;
 }
 
-//-------------> Q7
+//--------------------------------------------------------------------------> Q7
 function mudarImg(){
     document.getElementById('mudarImg').setAttribute('src', 'images/img-gato2.jpg')
 }
@@ -95,7 +95,7 @@ function defaultImg(){
     document.getElementById('mudarImg').setAttribute('src', 'images/img-gato1.gif')
 }
 
-//-------------> Q8
+//--------------------------------------------------------------------------> Q8
 var contaClick = 1
 function clickContador(){
     texto = document.getElementById('contador')
@@ -103,7 +103,7 @@ function clickContador(){
     contaClick ++
 }
 
-//-------------> Q9
+//--------------------------------------------------------------------------> Q9
 function tamanhoDinamico() {
     let slide = document.getElementById('barraSlide');
     let divDinamica = document.getElementById('divDinamica');
@@ -111,7 +111,7 @@ function tamanhoDinamico() {
     divDinamica.style.width = `${valor}%`;
 }
 
-//-------------> Q10
+//-------------------------------------------------------------------------> Q10
 function alertaDinamica(){
     let campo = document.getElementById('textoEntrada').value;
     
@@ -124,7 +124,7 @@ function alertaDinamica(){
     }
 }
 
-//-------------> Q11
+//-------------------------------------------------------------------------> Q11
 function cssDinamico(){
     let menu = document.getElementById('menu')
     let btnMute = document.getElementById('btn')
@@ -159,7 +159,7 @@ function cssDinamico(){
     }
 }
 
-//-------------> Q12
+//-------------------------------------------------------------------------> Q12
 var eixoX = 0;
 var eixoY = 0;
 var personagem = document.getElementById('personagem');
@@ -216,7 +216,7 @@ function moveDiv(evento){
     }
 }
 
-//-------------> Q13
+//-------------------------------------------------------------------------> Q13
 var cores = ['dodgerblue', 'coral', 'aliceblue', 'Violet', 'crimson', 'Brown', 'aqua', 'aquamarine', 'chartreuse', 'indianred'];
 var corSelecionada = '';
 
@@ -235,7 +235,7 @@ function restaurarCor() {
     corbase.style.backgroundColor = '#b3b3b3';
 }
 
-//-------------> Q14
+//-------------------------------------------------------------------------> Q14
 function darkmode(){
     let bg = document.getElementById('darkmode')
     let btnSwitch = document.getElementById('btnSwitch')
@@ -261,7 +261,7 @@ function darkmode(){
     }
 }
 
-//-------------> Q15
+//-------------------------------------------------------------------------> Q15
 var images = [
     "./images/imagem1.gif",
     "./images/imagem2.gif",
@@ -290,8 +290,7 @@ function proxima() {
     imagemShow.src = images[contadorimg];
 }
 
-//-------------> Q16
-
+//-------------------------------------------------------------------------> Q16
 function validarEmail(event) {
     const emailInput = document.getElementById('email16');
     const email = emailInput.value.trim();
@@ -322,7 +321,7 @@ function sair(){
     modal.close()
 }
 
-//-------------> Q18
+//-------------------------------------------------------------------------> Q18
 var conteudo = document.querySelectorAll('.conteudo')
 conteudo.forEach((item, index) => {
     let menu = item.querySelector('header');
@@ -340,6 +339,5 @@ conteudo.forEach((item, index) => {
     console.log(texto)
 })
 
-//-------------> Q19 - Está no script-q19.js
-
+//-------------------------------------------------> Q19 - Está no script-q19.js
 //-------------> Q20
