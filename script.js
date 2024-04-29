@@ -5,7 +5,7 @@ function mudaTexto(){
 
 //-------------> Q2
 function mudarCorDiv(){
-    document.getElementById('mudarCor').style.backgroundColor='coral';
+    document.getElementById('mudarCor').style.backgroundColor='dodgerblue';
 }
 
 function defaultCorDiv(){
@@ -240,6 +240,7 @@ function restaurarCor() {
 function darkmode(){
     let bg = document.getElementById('darkmode')
     let btnSwitch = document.getElementById('btnSwitch')
+    let icon = document.getElementById('icon-darkmode')
 
     if (btnSwitch.classList.contains('btn-light')) {
         btnSwitch.value = 'Ativar Lightmode'
@@ -248,6 +249,7 @@ function darkmode(){
 
         btnSwitch.removeAttribute('class', 'btn-light')
         btnSwitch.setAttribute('class', 'btn-dark')
+        icon.innerHTML = '<i class="fa-solid fa-moon" style="color: #b3b3b3;"></i>'
 
     } else {
         btnSwitch.value = 'Ativar Darkmode'
@@ -255,7 +257,8 @@ function darkmode(){
         bg.setAttribute('class', 'light-mode' )
 
         btnSwitch.removeAttribute('class', 'btn-dark')
-        btnSwitch.setAttribute('class', 'btn-light')        
+        btnSwitch.setAttribute('class', 'btn-light')  
+        icon.innerHTML = '<i class="fa-solid fa-sun"></i>'      
     }
 }
 //-------------> Q15
