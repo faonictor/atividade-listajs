@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <script src="/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fc0d610add.js" crossorigin="anonymous"></script>
     <title>Atividade Avaliativa WEB-I</title>
 </head>
@@ -29,25 +28,25 @@
                     <p><i class="fa-solid fa-list"></i> Questões:</p>
                 </div>
                 <div class="nav-itens">
-                    <a class="nav-a" href="#q1" onclick="carregarElemento('q1')">01</a>
-                    <a class="nav-a" href="#q2" onclick="carregarElemento('q2')">02</a>
-                    <a class="nav-a" href="#q3" onclick="carregarElemento('q4')">3|4</a>
-                    <a class="nav-a" href="#q5" onclick="carregarElemento('q5')">5</a>
-                    <a class="nav-a" href="#q6" onclick="carregarElemento('q6')">6</a>
-                    <a class="nav-a" href="#q7" onclick="carregarElemento('q7')">7</a>
-                    <a class="nav-a" href="#q8" onclick="carregarElemento('q8')">8</a>
-                    <a class="nav-a" href="#q9" onclick="carregarElemento('q9')">9</a>
-                    <a class="nav-a" href="#q10" onclick="carregarElemento('q10')">10</a>
-                    <a class="nav-a" href="#q11" onclick="carregarElemento('q11')">11</a>
-                    <a class="nav-a" href="#q12" onclick="carregarElemento('q12')">12</a>
-                    <a class="nav-a" href="#q13" onclick="carregarElemento('q13')">13</a>
-                    <a class="nav-a" href="#q14" onclick="carregarElemento('q14')">14</a>
-                    <a class="nav-a" href="#q15" onclick="carregarElemento('q15')">15</a>
-                    <a class="nav-a" href="#q16" onclick="carregarElemento('q16')">16</a>
-                    <a class="nav-a" href="#q17" onclick="carregarElemento('q17')">17</a>
-                    <a class="nav-a" href="#q18" onclick="carregarElemento('q18')">18</a>
-                    <a class="nav-a" href="#q19" onclick="carregarElemento('q19')">19</a>
-                    <a class="nav-a" href="#q20" onclick="carregarElemento('q20')">20</a>
+                    <a class="nav-a" href="#q1">01</a>
+                    <a class="nav-a" href="#q2">02</a>
+                    <a class="nav-a" href="#q3">03|04</a>
+                    <a class="nav-a" href="#q5">05</a>
+                    <a class="nav-a" href="#q6">06</a>
+                    <a class="nav-a" href="#q7">07</a>
+                    <a class="nav-a" href="#q8">08</a>
+                    <a class="nav-a" href="#q9">09</a>
+                    <a class="nav-a" href="#q10">10</a>
+                    <a class="nav-a" href="#q11">11</a>
+                    <a class="nav-a" href="#q12">12</a>
+                    <a class="nav-a" href="#q13">13</a>
+                    <a class="nav-a" href="#q14">14</a>
+                    <a class="nav-a" href="#q15">15</a>
+                    <a class="nav-a" href="#q16">16</a>
+                    <a class="nav-a" href="#q17">17</a>
+                    <a class="nav-a" href="#q18">18</a>
+                    <a class="nav-a" href="#q19">19</a>
+                    <a class="nav-a" href="#q20">20</a>
                 </div>
             </nav>
             <div id="q1" class="questions">
@@ -226,22 +225,35 @@
             </div>
             <div id="q18" class="questions">
                 <h2>Questão 18 - Accordions</h2>
-                    <div class="accordion">
-                        <div class="conteudo">
-                            <header>
-                                <span class="titulo">Meu Primeiro Acordeão</span>
-                                <i class="fa-solid fa-plus"></i>
-                            </header>
-                            <div class="texto">
-                                Este conteúdo irá colapsar ao clicar no cabeçalho deste acordeão.
-                                <div class="box-infos">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                    Clique novamente no cabeçalho para fechar.
-                                </div>
+                <div class="accordion">
+                    <div class="conteudo">
+                        <header>
+                            <span class="titulo">Meu Primeiro Acordeão</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+                        <div class="texto">
+                            Este conteúdo irá colapsar ao clicar no cabeçalho deste acordeão.
+                            <div class="box-infos">
+                                <i class="fa-solid fa-circle-info"></i>
+                                Clique novamente no cabeçalho para fechar.
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="q19" class="questions">
+                <h2>Questão 19 - Animação On Load</h2>
+                <div class="download-bar" onload="download()">
+                    <div id="barra-progresso">
+                        <div id="progresso"></div>
+                    </div>
+                    <div class="box-infos">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Barra de Progresso de Download | Se precisar <a class="link-refresh" href="#19" onClick="window.location.reload()"><i class="fa-solid fa-arrows-rotate"></i> Refresh a Página 'F5'</a>
+                    </div>
+                </div>
+            </div>
+            
 
 
         </div>
