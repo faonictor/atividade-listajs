@@ -34,6 +34,7 @@ main{
     margin-top: 20px;
     background-color: #ffffff;
     border-radius: 10px;
+    box-shadow: 0 8px 10px #3d3d3d5d;
 }
 
 p{
@@ -267,7 +268,7 @@ input[type=search]:focus {
     width: 50px; 
     height: 50px; 
     border-radius: 4px;
-    z-index: 999;
+    z-index: 900;
 }
 
 .personagem{
@@ -506,6 +507,10 @@ li.item{
     border-radius: 10px;
     width: 100%;
     min-height: 70px;
+    position: sticky;
+    top: 10px;
+    box-shadow: 0 8px 10px #3d3d3d5d;
+    z-index: 999;
 }
 
 .nav-itens{
